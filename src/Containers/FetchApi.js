@@ -1,4 +1,4 @@
-export var API_URL = 'https://writershq1.herokuapp.com';
+export var API_URL = 'https://writershq1.herokuapp.com:5000';
 var result = "";
 
 export function tryItFree(user_email) {
