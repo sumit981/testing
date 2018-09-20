@@ -119,7 +119,7 @@ class Dashboard extends Component {
 	   var islogin = localStorage.getItem('IsLogin');
 
        if(!islogin){
-       window.location ='/Login';
+       window.location = React_URL+'/Login';
     }else{
 		
 		return (
