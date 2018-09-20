@@ -2,6 +2,7 @@
   "name": "article-writer",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://writershq1.herokuapp.com:5000",
   "dependencies": {
     "draft-js": "^0.10.5",
     "draftjs-to-html": "^0.8.4",
@@ -18,6 +19,6 @@
     "start": "set PORT=5019 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
   }
 }
