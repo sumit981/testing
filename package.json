@@ -16,7 +16,7 @@
   },
   "proxy": "https://writershq1.herokuapp.com:5000",
   "scripts": {
-    "start": "HOST=writershq1.herokuapp.co react-scripts start",
+    "start": "set PORT=5019 HOST=writershq1.herokuapp.com &&  react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
