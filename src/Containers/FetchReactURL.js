@@ -1,1 +1,1 @@
-export var React_URL = "http://localhost:5019";
+export var React_URL = "https://writershq1.herokuapp.com/";
