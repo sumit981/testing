@@ -2,7 +2,6 @@
   "name": "article-writer",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://writershq1.herokuapp.com:5000",
   "dependencies": {
     "draft-js": "^0.10.5",
     "draftjs-to-html": "^0.8.4",
