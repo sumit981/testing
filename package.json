@@ -15,19 +15,9 @@
     "react-scripts": "1.1.5"
   },
   "proxy": "https://writershq1.herokuapp.com:5000",
-
-  // ...
-  "proxy": {
-    "/api": {
-      "target": "https://writershq1.herokuapp.com:5000",
-      "ws": true
-      // ...
-    }
-  },
-  // ...
-
   "scripts": {
     "start": "set PORT=5019 && react-scripts start",
+    "Host" : "https://writershq1.herokuapp.com/",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
