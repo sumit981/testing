@@ -1,54 +1,39 @@
-import React, { Component } from 'react'
-import './App.css'
+import React, { Component } from "react";
+import SelectedFoods from "./SelectedFoods";
+import FoodSearch from "./FoodSearch";
 
 class App extends Component {
   state = {
-    cow: '',
-    text: ''
-  }
+    selectedFoods: []
+  };
 
-  componentDidMount() {
-    this.fetchCow()
-  }
+  removeFoodItem = itemIndex => {
+    const filteredFoods = this.state.selectedFoods.filter(
+      (item, idx) => itemIndex !== idx
+    );
+    this.setState({ selectedFoods: filteredFoods });
+  };
 
-  fetchCow = async () => {
-    const response = await fetch(`/api/cow`)
-    const initialCow = await response.json()
-    const cow = initialCow.moo
-    this.setState({ cow })
-  }
-
-  customCow = async evt => {
-    evt.preventDefault()
-    const text = this.state.text
-    const response = await fetch(`/api/cow/${text}`)
-    const custom = await response.json()
-    const cow = custom.moo
-    this.setState({ cow, text: '' })
-  }
-
-  handleChange = evt => {
-    this.setState({ [evt.target.name]: evt.target.value })
-  }
+  addFood = food => {
+    const newFoods = this.state.selectedFoods.concat(food);
+    this.setState({ selectedFoods: newFoods });
+  };
 
   render() {
+    const { selectedFoods } = this.state;
+
     return (
       <div className="App">
-        <h3>Text Cow. Moo</h3>
-        <code>{this.state.cow}</code>
-        <form onSubmit={this.customCow}>
-          <label>Custom Cow Text:</label>
-          <input
-            type="text"
-            name="text"
-            value={this.state.text}
-            onChange={this.handleChange}
+        <div className="ui text container">
+          <SelectedFoods
+            foods={selectedFoods}
+            onFoodClick={this.removeFoodItem}
           />
-          <button type="submit">Show me a talking cow!</button>
-        </form>
+          <FoodSearch onFoodClick={this.addFood} />
+        </div>
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;

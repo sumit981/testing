@@ -1,21 +1,26 @@
 {
-  "name": "crae-example",
-  "version": "1.0.0",
-  "description": "Create-react-app with Express",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
-  },
-  "author": "Chloe Chong",
-  "license": "ISC",
+  "name": "lookup-server",
+  "version": "0.0.1",
+  "private": true,
   "dependencies": {
-    "cors": "^2.8.4",
-    "cowsay": "^1.3.1",
-    "express": "^4.16.3"
+    "babel-core": "6.14.0",
+    "express": "4.13.3",
+    "fs": "0.0.2",
+    "sql.js": "0.3.2"
   },
-  "engines": {
-    "node": "10.5.0"
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js",
+    "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "concurrently": "3.1.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.9.0"
   }
 }
