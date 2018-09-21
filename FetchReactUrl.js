@@ -1,6 +1,6 @@
 
 
-var React_Url = "http://localhost:3000";
+var React_Url = "https://writershq1.herokuapp.com:3000";
 
 
 

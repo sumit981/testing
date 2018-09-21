@@ -1,6 +1,6 @@
 
 
- var API_URL = "http://localhost:3001";
+ var API_URL = "https://writershq1.herokuapp.com:3001";
 
 
 module.exports = API_URL;
