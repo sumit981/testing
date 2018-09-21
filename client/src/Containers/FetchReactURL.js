@@ -1,0 +1,1 @@
+export var React_URL = "http://localhost:3000";

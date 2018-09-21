@@ -1,0 +1,49 @@
+/* Write your custom CSS here */
+
+.loder_email
+{
+	display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0px auto;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 999;
+}
+.loder_email_img
+{
+	margin: 0px auto;
+    position: relative;
+    right: 0px;
+    left: 47%;
+    top: 40%;
+}
+.sign_out_btn
+{
+	background-color: #00acc1;
+	color: white;
+	font-size: 17px;
+}
+
+.new_doc_btn
+{
+	background-color: #00acc1;
+	color: white;
+	font-size: 20px;
+}
+
+.profile_update_btn
+{
+	background-color: #00acc1;
+	color: white;
+	font-size: 20px;
+}
+.try_it_free_btn
+{
+	background-color: #00acc1;
+	color: white;
+	font-size: 17px;
+}
