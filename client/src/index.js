@@ -1,10 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import "./index.css";
-import "../semantic/dist/semantic.min.css";
+import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById("root") // eslint-disable-line no-undef
-);
+import './index.css';
+import App from './App/App';
+
+render((
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>
+), document.getElementById('root'));
