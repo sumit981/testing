@@ -1,23 +1,21 @@
 {
-  "name": "article-writer",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "draft-js": "^0.10.5",
-    "draftjs-to-html": "^0.8.4",
-    "forever": "^0.15.3",
-    "html-to-draftjs": "^1.4.0",
-    "jquery": "^3.3.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-draft-wysiwyg": "^1.12.13",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.5"
-  },
+  "name": "crae-example",
+  "version": "1.0.0",
+  "description": "Create-react-app with Express",
+  "main": "index.js",
   "scripts": {
-    "start": "set PORT=5019 && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "Chloe Chong",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "cowsay": "^1.3.1",
+    "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "10.5.0"
   }
 }

@@ -1,1 +1,0 @@
-export var React_URL = "https://writershq1.herokuapp.com/";
