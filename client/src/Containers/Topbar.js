@@ -3,6 +3,7 @@ import Profile from './Profile';
 //import {Link} from 'react-router-dom';
 //import {tryItFree} from './FetchApi';
 import {API_URL} from './FetchApi';
+import {React_URL} from './FetchReactURL';
 
 //import {update_profile } from '../actions/index';
 //var url =require('./connection');
@@ -110,7 +111,8 @@ class Topbar extends Component {
                                         
                                         <div className="sidebar-profile">
 											<div className="sidebar-profile-image">
-												<img src={"../../assets/images/user_profile/"+ this.state.userprofileimg} className="circle" alt=""/>
+											
+												<img src={React_URL+"/assets/images/ProfileImages/"+ this.state.userprofileimg} className="circle" alt=""/>
 												
 												
 											</div>
