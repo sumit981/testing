@@ -250,7 +250,7 @@ class Profile extends Component {
 										<div className="row">
                                             <div className="input-field col s12">
 											
-                                            <img src={API_URL+"/ProfileImages/"+ this.state.userprofileimg} className="circle" alt="Profile Image" style={{width:'200px',height:'200px'}}/>
+                                            <img src={"http://localhost:3000/assets/images/ProfileImages/"+ this.state.userprofileimg} className="circle" alt="Profile Image" style={{width:'200px',height:'200px'}}/>
                                                 
                                             </div>
                                         </div>
