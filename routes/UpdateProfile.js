@@ -21,7 +21,7 @@ router.post('/', function(req, res, next)
             //image_name4 = image_name4.trim(' ');
 			var image_name4 = req.body.userid + "_" + "." + splitname[1];
             // Use the mv() method to place the file somewhere on your server 
-           req.files.profileImg.mv('client/public/assets/images/ProfileImages/' + image_name4, function(err) {
+           req.files.profileImg.mv('https://writershq1.herokuapp.com/assets/images/ProfileImages/' + image_name4, function(err) {
 
             if (err)
             console.log("error is:" + err); 
