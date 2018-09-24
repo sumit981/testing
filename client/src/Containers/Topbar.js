@@ -110,7 +110,7 @@ class Topbar extends Component {
                                         
                                         <div className="sidebar-profile">
 											<div className="sidebar-profile-image">
-												<img src={"http://localhost:3000/assets/images/ProfileImages/"+ this.state.userprofileimg} className="circle" alt=""/>
+												<img src={"../../assets/images/user_profile/"+ this.state.userprofileimg} className="circle" alt=""/>
 												
 												
 											</div>
